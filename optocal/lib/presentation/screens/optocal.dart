@@ -65,7 +65,7 @@ class OptocalState extends State<Optocal> {
 
   @override
   Widget build(BuildContext context) {
-    List<String> availableOptions = ['Snellen', 'Metros', 'Decimal', 'Mar'];
+    List<String> availableOptions = ['Snellen', 'Metros', 'Decimal', 'MAR'];
     availableOptions.remove(selectedFrom);
 
     return Scaffold(
@@ -100,7 +100,7 @@ class OptocalState extends State<Optocal> {
                 ButtonSegment(value: 'Snellen', label: Text('Snellen')),
                 ButtonSegment(value: 'Metros', label: Text('Metros')),
                 ButtonSegment(value: 'Decimal', label: Text('Decimal')),
-                ButtonSegment(value: 'Mar', label: Text('Mar')),
+                ButtonSegment(value: 'MAR', label: Text('MAR')),
               ],
               selected: {selectedFrom},
               onSelectionChanged: (Set<String> newSelection) {

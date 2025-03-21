@@ -97,10 +97,46 @@ class OptocalState extends State<Optocal> {
             SizedBox(height: 20),
             SegmentedButton<String>(
               segments: [
-                ButtonSegment(value: 'Snellen', label: Text('Snellen')),
-                ButtonSegment(value: 'Metros', label: Text('Metros')),
-                ButtonSegment(value: 'Decimal', label: Text('Decimal')),
-                ButtonSegment(value: 'MAR', label: Text('MAR')),
+                ButtonSegment(
+                  value: 'Snellen',
+                  label: Text(
+                    'Snellen',
+                    style: TextStyle(fontSize: 12),
+                    overflow:
+                        TextOverflow
+                            .ellipsis, // Asegura que el texto largo no se desborde
+                  ),
+                ),
+                ButtonSegment(
+                  value: 'Metros',
+                  label: Text(
+                    'Metros',
+                    style: TextStyle(fontSize: 12),
+                    overflow:
+                        TextOverflow
+                            .ellipsis, // Asegura que el texto largo no se desborde
+                  ),
+                ),
+                ButtonSegment(
+                  value: 'Decimal',
+                  label: Text(
+                    'Decimal',
+                    style: TextStyle(fontSize: 12),
+                    overflow:
+                        TextOverflow
+                            .ellipsis, // Asegura que el texto largo no se desborde
+                  ),
+                ),
+                ButtonSegment(
+                  value: 'MAR',
+                  label: Text(
+                    'MAR',
+                    style: TextStyle(fontSize: 12),
+                    overflow:
+                        TextOverflow
+                            .ellipsis, // Asegura que el texto largo no se desborde
+                  ),
+                ),
               ],
               selected: {selectedFrom},
               onSelectionChanged: (Set<String> newSelection) {
@@ -118,8 +154,16 @@ class OptocalState extends State<Optocal> {
               segments:
                   availableOptions
                       .map(
-                        (option) =>
-                            ButtonSegment(value: option, label: Text(option)),
+                        (option) => ButtonSegment(
+                          value: option,
+                          label: Text(
+                            option,
+                            style: TextStyle(fontSize: 12),
+                            overflow:
+                                TextOverflow
+                                    .ellipsis, // Asegura que el texto largo no se desborde
+                          ),
+                        ),
                       )
                       .toList(),
               selected: {selectedTo},
@@ -149,12 +193,7 @@ class OptocalState extends State<Optocal> {
                 'Convertir',
                 style: TextStyle(
                   fontSize: 18,
-                  color: const Color.fromARGB(
-                    255,
-                    46,
-                    6,
-                    6,
-                  ), // <- Forzar texto blanco
+                  color: const Color.fromARGB(255, 46, 6, 6),
                 ),
               ),
             ),

@@ -22,7 +22,7 @@ class CustomButton extends StatelessWidget {
       onPressed: onPressed, // Asignamos la función que nos pasaron al presionar
       style: ElevatedButton.styleFrom(
         shape: const StadiumBorder(), // Forma ovalada (como un estadio)
-        backgroundColor: const Color(0xFFf0d346), // Fondo blanco
+        backgroundColor: const Color(0xFFe4c747), // Fondo blanco
         foregroundColor: const Color(
           0xFF351b4b,
         ), // Color del texto y efectos al tocar (azul)

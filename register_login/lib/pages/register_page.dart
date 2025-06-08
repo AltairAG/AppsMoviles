@@ -86,9 +86,9 @@ class RegisterPage extends StatelessWidget {
                           );
                           return; // Detenemos el proceso si hay errores
                         }
-                        // Si todo está bien, mostramos en consola (luego se cambiará por lógica real)
+                        // Si todo está bien, mostramos en consola sin funcionalidad aun...
                         debugPrint(
-                          "Registered Username: ${usernameController.text}",
+                          "Usuario Registrado: ${usernameController.text}",
                         );
                       },
                     ),

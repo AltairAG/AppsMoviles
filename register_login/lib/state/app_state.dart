@@ -17,12 +17,12 @@ class AppState extends ChangeNotifier {
   // Método para cambiar a la vista de login
   void goToLogin() {
     _view = AppView.login; // Actualiza el estado interno
-    notifyListeners(); // Avisa a todos los widgets escuchando que hubo un cambio
+    notifyListeners(); // Avisa a todos los widgets que hubo un cambio
   }
 
   // Método para cambiar a la vista de registro
   void goToRegister() {
     _view = AppView.register; // Actualiza el estado interno
-    notifyListeners(); // Notifica a los widgets suscritos
+    notifyListeners(); // Notifica a los widgets que hubo un cambio
   }
 }

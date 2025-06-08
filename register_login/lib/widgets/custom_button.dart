@@ -22,10 +22,10 @@ class CustomButton extends StatelessWidget {
       onPressed: onPressed, // Asignamos la función que nos pasaron al presionar
       style: ElevatedButton.styleFrom(
         shape: const StadiumBorder(), // Forma ovalada (como un estadio)
-        backgroundColor: const Color(0xFFe4c747), // Fondo blanco
-        foregroundColor: const Color(
-          0xFF351b4b,
-        ), // Color del texto y efectos al tocar (azul)
+        backgroundColor: const Color(0xFFFFFFFF), // Fondo blanco
+        foregroundColor: const Color(0xFF2196F3), // letra azul
+        //backgroundColor: const Color(0xFFe4c747), // Fondo amarillo
+        //foregroundColor: const Color(0xFF351b4b), // letra morada
         padding: const EdgeInsets.symmetric(
           vertical: 10, // Espacio arriba/abajo del texto
           horizontal: 10, // Espacio izquierda/derecha del texto

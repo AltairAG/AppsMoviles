@@ -25,10 +25,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner:
           false, // Oculta la etiqueta "Debug" en esquina superior derecha.
-      title: 'Flutter Demo', // Título de la app (para el sistema operativo).
+      title: 'Login-Register', // Título de la app (para el sistema operativo).
       theme: ThemeData(
         primarySwatch: Colors.blue,
-      ), // Define el tema visual (color primario azul).
+      ), // Define el tema visual como color primario azul.
       home: Consumer<AppState>(
         // Widget que escucha cambios en `AppState` y reconstruye su hijo.
         builder: (context, state, _) {

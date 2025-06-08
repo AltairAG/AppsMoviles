@@ -93,7 +93,7 @@ class _LoginPageState extends State<LoginPage> {
                               );
                               return; // Salimos sin hacer nada más
                             }
-                            // Si son válidos, imprimimos en consola (luego lo cambiaremos por lógica real)
+                            // Si son válidos, imprimimos en consola
                             debugPrint("Username: ${usernameController.text}");
                             debugPrint("Password: ${passwordController.text}");
                           },
@@ -110,7 +110,7 @@ class _LoginPageState extends State<LoginPage> {
                     const SizedBox(
                       height: 10,
                     ), // Espacio pequeño después de los botones
-                    // Texto de ayuda para recuperar cuenta
+                    // Texto de ayuda para recuperar cuenta no tiene funcion aun...
                     const Text(
                       "Can't access your account?",
                       textAlign: TextAlign.center,

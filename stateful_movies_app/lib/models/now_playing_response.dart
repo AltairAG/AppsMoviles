@@ -16,7 +16,8 @@ class NowPlayingResponse {
   int totalPages;
   int totalResults;
 
-  factory NowPlayingResponse.fromJson(String str) => NowPlayingResponse.fromMap(json.decode(str));
+  factory NowPlayingResponse.fromJson(String str) =>
+      NowPlayingResponse.fromMap(json.decode(str));
 
   factory NowPlayingResponse.fromMap(Map<String, dynamic> json) {
     return NowPlayingResponse(

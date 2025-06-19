@@ -26,7 +26,7 @@ class UserIcon extends StatelessWidget {
           width: 2, // Grosor del borde (2 píxeles)
         ),
         shape: BoxShape
-            .circle, // Forma circular (importante para el borde redondeado)
+            .circle, // Forma circular importante para el borde redondeado
       ),
       // El contenido del contenedor es un Icono con padding:
       child: Padding(
@@ -36,7 +36,7 @@ class UserIcon extends StatelessWidget {
         child: Icon(
           iconData, // Icono que recibimos por parámetro
           color: Colors.white, // Color blanco para el icono
-          size: size * 0.8, // Tamaño del icono (80% del tamaño total)
+          size: size * 0.8, // Tamaño del icono 80% del tamaño total
         ),
       ),
     );
